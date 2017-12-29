@@ -147,7 +147,11 @@ a {
 }
 .map iframe {
     width: 100%;
-    height: 100%; /* had to specify height/width */
+    height: 450px  ; /* had to specify height/width */
+    border: 1px solid $pink;
+    @media (min-width: 768px) {
+      height: 100%;
+    }
   	position: absolute;
     top: 0;
     right: 0;
