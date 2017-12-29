@@ -115,8 +115,10 @@ a {
   }
 
   .endTag {
-    display: inline-block;
-    margin-left: 8rem;
+    @media (min-width: 768px) {
+      display: inline-block;
+      margin-left: 8rem;
+    }
   }
 
 }
