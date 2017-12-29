@@ -55,6 +55,10 @@ body {
   padding-bottom: 1rem;
   font-family: $handwriting;
   margin-bottom: 1rem;
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .invitationList {
@@ -99,9 +103,12 @@ a {
   .registryLink {
     font-size: 2rem;
     margin-top: 3rem;
-
+    line-height: 2rem;
     color: $darkGray;
-    line-height: 1rem;
+
+    @media (min-width: 768px) {
+      line-height: 1rem;
+    }
 
     i {
       color: $pink;
