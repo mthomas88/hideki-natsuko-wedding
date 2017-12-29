@@ -1,5 +1,125 @@
 ---
 ---
+$darkGray: #3a2e39;
+$slateGreen: #1e555c;
+$offWhite: #f4d8cd;
+$pink: #f374ae;
+$darkRed: #7d4e57;
+$handwriting: "Lobster Two";
+$sans: "Montserrat";
+
 body {
-  background-color: #000;
+  background-color: white;
+  font-family: $sans;
+  padding-top: 4rem;
 }
+
+.t-pink {
+  color: $pink;
+}
+
+.t-dark {
+  color: $darkGray;
+}
+
+.separator {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0,0,0,0.05);
+  margin: 1rem 0;
+}
+
+.t-darkRed {
+  color: $darkRed;
+}
+
+.t-green {
+  color: $slateGreen;
+}
+
+.s {
+  font-weight: 700;
+  border-bottom: 1px solid rgba($pink, 0.5);
+  padding-bottom: 1rem;
+  font-family: $handwriting;
+  margin-bottom: 1rem;
+}
+
+.invitationList {
+  dt {
+    font-family: $handwriting;
+    font-size: 1.4rem;
+  }
+}
+
+a {
+  color: $pink;
+}
+
+.handwriting {
+  font-family: $handwriting;
+}
+
+.mainTag {
+  padding-top: 3rem;
+  text-align: center;
+
+  .hashTag {
+    font-size: 1rem;
+    font-family: $sans;
+    color: rgba(0,0,0,0.25);
+    line-height: 1rem;
+
+    .tag {
+      color: $pink;
+      display: inline-block;
+      border-bottom: 1px dotted $pink;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .registryLink {
+    font-size: 2rem;
+    margin-top: 3rem;
+
+    color: $darkGray;
+    line-height: 1rem;
+
+    i {
+      color: $pink;
+    }
+  }
+
+  p {
+    font-size: 8rem;
+    font-family: $handwriting;
+    line-height: 8.2rem;
+  }
+
+  .endTag {
+    display: inline-block;
+    margin-left: 8rem;
+  }
+
+}
+
+.map {
+  width: 100%;
+  height: 0;
+  margin: 0 auto;
+  padding-top: 33.33%;
+  position: relative;
+}
+.map iframe {
+    width: 100%;
+    height: 100%; /* had to specify height/width */
+  	position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
